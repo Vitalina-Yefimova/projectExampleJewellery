@@ -26,6 +26,7 @@
           '320': '320px',
           '768': '768px',
           '1366': '1366px',
+          '1536': '1536px',
         },
         width: {
           '25': '25px',
@@ -63,7 +64,7 @@
   }
   </script>
 </head>
-<body class="w-full min-w-320 md:min-w-768 desktop:min-w-1366">
+<body class="w-full min-w-320 md:min-w-768 desktop:min-w-1366 2xl:min-w-1536">
   <header class="flex flex-row justify-between items-center px-15 md:px-45 desktop:px-[98px] py-5 md:py-30 desktop:pb-[18px]">
     <button class="desktop:hidden">
       <svg class="w-25 h-18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 18" fill="none">
@@ -102,7 +103,8 @@
     </div>
   </header>
   <main>
-    <section class="flex flex-col gap-[35px] md:gap-[46px] bg-customBrown pb-[39px] pt-[10px] px-15 md:px-45 md:pb-[70px] desktop:flex desktop:items-center desktop:bg-white desktop:px-0 desktop:py-0 desktop:gap-0 desktop:pl-[10px]">
+    <!-- Не забудь снять hidden -->
+    <section class=" hidden flex flex-col gap-[35px] md:gap-[46px] bg-customBrown pb-[39px] pt-[10px] px-15 md:px-45 md:pb-[70px] desktop:flex desktop:items-center desktop:bg-white desktop:px-0 desktop:py-0 desktop:gap-0 desktop:pl-[10px]">
       <div class="desktop:hidden relative flex items-center">
         <input class="w-full h-10 bg-customBrown0.15 rounded-[21px]" type="text">
         <svg class="w-4 h-4 absolute left-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none">
@@ -140,25 +142,98 @@
         </p>
       </div>
     </section>
-    <section>
-      <h2>
+    <section class="flex flex-col items-center">
+      <div class="md:flex md:gap-[143px] items-end desktop:items-start desktop:gap-[396.5px] 2xl:gap-[670px]">
+        <svg class="hidden desktop:hidden md:flex md:mb-[31px]" xmlns="http://www.w3.org/2000/svg" width="37" height="17" viewBox="0 0 37 17" fill="none">
+          <path d="M37 8.5L1 8.5M1 8.5L10.2703 16M1 8.5L10.2703 1" stroke="#A87B62" />
+        </svg>
+        <svg class="hidden desktop:flex desktop:mt-[164px] 2xl:w-20 2xl:h-5" xmlns="http://www.w3.org/2000/svg" width="30" height="11" viewBox="0 0 30 11" fill="none"> 
+          <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62" />
+        </svg>
+      <div class="flex flex-col items-center">
+      <h2 class="text-customBlack font-cormorant-garamond text-[34px] font-bold not-italic pt-[55px] px-[110px] pb-[15px] md:pt-[65px] desktop:pt-[116px] desktop:pb-[24px] 2xl:text-7xl">
         New In
       </h2>
-      <p>
+      <p class="text-customBlack font-poppins text-base font-medium not-italic pb-[3px] leading-[0.9] 2xl:text-3xl">
         Shop Now
       </p>
-      <div></div>
-      <div class="flex">
-        <div>
-          <img src="" alt="">
-          <h3></h3>
-          <p></p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <h3></h3>
-          <p></p>
-        </div>
+      <div class="bg-customBrown h-px w-20 2xl:w-40"></div>
+      </div>
+      <svg class="hidden desktop:hidden md:flex md:mb-[31px]" xmlns="http://www.w3.org/2000/svg" width="37" height="17" viewBox="0 0 37 17" fill="none">
+        <path d="M0 8.5H36M36 8.5L26.7297 1M36 8.5L26.7297 16" stroke="#A87B62" />
+      </svg>
+      <svg class="hidden desktop:flex desktop:mt-[164px] 2xl:w-20 2xl:h-5" xmlns="http://www.w3.org/2000/svg" width="30" height="11" viewBox="0 0 30 11" fill="none">
+        <path d="M0 5.5H29M29 5.5L23.5135 1M29 5.5L23.5135 10" stroke="#A87B62" />
+      </svg>
+      </div>
+      <ul class="grid grid-cols-2 gap-[30px] pt-10 pb-7 px-[15px] md:pt-[50px] md:pb-10 desktop:grid-cols-4 desktop:pt-[60px] desktop:pb-[49px] 2xl:gap-[150px]">
+        <li>
+          <img class="md:hidden desktop:hidden w-full" src="img/purple-gemstone-necklace-mobile.jpg" alt="Necklace with purple gemstone">
+          <img class="hidden desktop:hidden md:flex w-full" src="img/purple-gemstone-necklace-tab.jpg" alt="Necklace with purple gemstone">
+          <img class="hidden desktop:flex w-full" src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with purple gemstone">
+          <h3 class="text-center text-customBlack font-poppins not-italic font-medium text-[16px] leading-[1.3] pt-4 md:pt-5 md:pl-4 desktop:pl-0 2xl:text-3xl">
+            Necklace with 
+            <span class="pl-[5px] md:pl-0">
+              amethyst
+            </span>
+          </h3>
+          <p class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl">
+            $ 145
+          </p>
+        </li>
+        <li>
+          <img class="md:hidden desktop:hidden w-full" src="img/layered-choker-necklace-mobile.jpg" alt="Necklace - layered choker">
+          <img class="hidden desktop:hidden md:flex w-full" src="img/layered-choker-necklace-tab.jpg" alt="Necklace - layered choker">
+          <img class="hidden desktop:flex w-full" src="img/layered-choker-necklace-desktop.jpg" alt="Necklace - layered choker">
+          <h3 class="text-center text-customBlack font-poppins not-italic font-medium text-[16px] leading-[1.3] pt-4 md:pt-5 2xl:text-3xl">
+            Layered choker
+          </h3>
+          <p class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl">
+            $ 115
+          </p>
+        </li>
+        <li class="hidden desktop:block">
+          <img class="w-full" src="img/gold-layered-necklace-desktop.jpg" alt="Gold layered necklace">
+        <h3 class="text-center text-customBlack font-poppins not-italic font-medium text-[16px] leading-[1.3] pt-4 desktop:pt-5 2xl:text-3xl">
+          Gold chain
+        </h3>
+        <p class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl">
+          $ 215
+        </p>
+        </li>
+        <li class="hidden desktop:block">
+          <img class="hidden desktop:flex w-full" src="img/galaxy-earrings-desktop.jpg" alt="Galaxy earrings">
+          <h3 class="text-center text-customBlack font-poppins not-italic font-medium text-[16px] leading-[1.3] pt-4 desktop:pt-5 desktop:pl-[5px] 2xl:text-3xl">
+            Galaxy earrings
+          </h3>
+          <p class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl">
+            $ 95
+          </p>
+        </li>
+      </ul>
+        <ul class="grid grid-cols-3 md:grid-cols-6 gap-[5px] items-center text-center text-customBlack font-poppins text-[16px] not-italic font-medium md:justify-items-start md:gap-[7px] desktop:grid-cols-3 2xl:text-4xl 2xl:gap-10">
+          <li class="pr-[2px] md:pl-[7px] desktop:pr-1">
+            1
+          </li>
+          <li class="md:hidden desktop:hidden pr-[2px]">
+            of
+          </li>
+          <li class="hidden md:block text-customLightGray md:ml-[2px]">
+            2
+          </li>
+          <li class="hidden md:block text-customLightGray">
+            3
+          </li>
+          <li class="hidden desktop:hidden md:block text-customLightGray">
+            4
+          </li>
+          <li class="hidden desktop:hidden md:block text-customLightGray">
+            5
+          </li>
+          <li class="desktop:hidden pr-[6px] md:text-customLightGray"">
+            6
+          </li>
+        </ul>
       </div>
     </section>
   </main>
