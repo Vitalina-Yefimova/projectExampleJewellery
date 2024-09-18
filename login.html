@@ -1,91 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        screens: {
-          'desktop': '1366px',
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              desktop: "1366px",
+            },
+            minWidth: {
+              240: "240px",
+              270: "270px",
+              320: "320px",
+              768: "768px",
+              1366: "1366px",
+              1536: "1536px",
+            },
+            padding: {
+              15: "15px",
+              55: "55px",
+            },
+            fontFamily: {
+              "cormorant-garamond": ["Cormorant Garamond", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+            fontSize: {
+              14: "14px",
+            },
+            colors: {
+              customSand: "#F0EAE4",
+              customBlack: "#1D1613",
+              customGray: "#9B9997",
+              customBrown: "#A87B62",
+            },
+            boxShadow: {
+              customShadow: "0px 5px 32px 0px rgba(226, 221, 215, 0.24)",
+            },
+          },
         },
-        minWidth: {
-          '240': '240px',
-          '270': '270px',
-          '320': '320px',
-          '768': '768px',
-          '1366': '1366px',
-          '1536': '1536px',
-        },
-        padding: {
-          '15': '15px',
-          '55': '55px',
-        },
-        fontFamily: {
-          'cormorant-garamond': ['Cormorant Garamond', 'serif'],
-          'poppins': ['Poppins', 'sans-serif'],
-        },
-         fontSize: {
-          '14': '14px',
-        },
-        colors: {
-          customSand: '#F0EAE4',
-          customBlack: '#1D1613',
-          customGray: '#9B9997',
-          customBrown: '#A87B62',
-        },
-        boxShadow: {
-          customShadow: '0px 5px 32px 0px rgba(226, 221, 215, 0.24)',
-        },
-      },
-    },
-  }
-  </script>
-</head>
-<body class="w-full min-w-320 md:min-w-768 desktop:min-w-1366 2xl:min-w-1536 py-[50px] px-[25px] md:py-20 md:px-[163px] desktop:px-[468px] desktop:py-[100px] 2xl:px-[1300px] 2xl:py-[200px]">
-  <section class="shadow-customShadow min-w-270">
-  <header class="relative">
-    <img class="md:hidden desktop:hidden w-full min-w-270" src="img/gold-earrings-intricate-patterns-mobile.png" alt="Gold earrings intricate patterns">
-    <img class="hidden desktop:hidden md:block w-full md:min-w-[442px]"src="img/gold-earrings-intricate-patterns-tab.png" alt="Gold earrings intricate patterns">
-    <img class="hidden md:hidden desktop:block w-full desktop:min-w-[430px]" src="img/gold-earrings-intricate-patterns-desktop.png" alt="Gold earrings intricate patterns">
-    <svg class="size-3.5 md:size-5 absolute top-[15px] right-[15px] md:top-5 md:right-5 desktop:size-3.5 desktop:top-5 desktop:right-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" fill="none">
-      <path d="M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z" fill="#1D1613" />
-    </svg>
-  </header>
-  <main class="bg-customSand px-15 md:px-[51px] desktop:px-[45px]">
-    <h1 class="text-customBlack text-2xl not-italic font-bold font-cormorant-garamond text-center pt-9 md:text-[34px] md:pt-55">
-      Log In
-    </h1>
-    <form class="w-full min-w-240 flex flex-col pb-[5px] pt-[11.5px] gap-[14.8px] md:pt-[22.5px] md:gap-[17px] md:pb-[6px]">
-      <label for="email"></label>
-      <input class="pb-[9px] border-b border-customBlack bg-customSand placeholder-customGray text-14 not-italic font-medium font-poppins" type="email" placeholder="Your E-mail">
-      <label for="password"></label>
-      <input class="pb-[9px] border-b border-customBlack bg-customSand placeholder-customGray text-14 not-italic font-medium font-poppins" type="password" placeholder="Password" >
-    </form>
-    <p class="text-customGray font-poppins text-xs font-medium not-italic text-end pb-[37px] md:pr-px md:pb-[46px]">
-      Forgot your password?
-    </p>
-    <div class="flex justify-center">
-    <button class="w-full min-w-240 min-h-[68px] bg-customBrown border border-bg-customBrown border-solid text-center text-white text-base font-medium font-poppins">
-      Log In
-    </button>
-    </div>
-    <p class="text-customGray font-poppins text-sm font-medium not-italic pb-10 pt-15 pl-2 pr-[7px] text-center md:pb-55 desktop:pl-0 desktop:pr-[5.5px]">
-      Don't have an account?
-      <button class="text-customBlack font-poppins text-sm font-medium not-italic desktop:pl-[5px]">
-        Sign up
-      </button>
-    </p>
-  </main>
-  </section>
-</body>
+      };
+    </script>
+  </head>
+  <body
+    class="w-full min-w-320 md:min-w-768 desktop:min-w-1366 2xl:min-w-1536 py-[50px] px-[25px] md:py-20 md:px-[163px] desktop:px-[468px] desktop:py-[100px] 2xl:px-[1300px] 2xl:py-[200px]"
+  >
+    <section class="shadow-customShadow min-w-270">
+      <header class="relative">
+        <img
+          class="md:hidden desktop:hidden w-full min-w-270"
+          src="img/gold-earrings-intricate-patterns-mobile.png"
+          alt="Gold earrings intricate patterns"
+        />
+        <img
+          class="hidden desktop:hidden md:block w-full md:min-w-[442px]"
+          src="img/gold-earrings-intricate-patterns-tab.png"
+          alt="Gold earrings intricate patterns"
+        />
+        <img
+          class="hidden md:hidden desktop:block w-full desktop:min-w-[430px]"
+          src="img/gold-earrings-intricate-patterns-desktop.png"
+          alt="Gold earrings intricate patterns"
+        />
+        <svg
+          class="size-3.5 md:size-5 absolute top-[15px] right-[15px] md:top-5 md:right-5 desktop:size-3.5 desktop:top-5 desktop:right-5"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 14 14"
+          fill="none"
+        >
+          <path
+            d="M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z"
+            fill="#1D1613"
+          />
+        </svg>
+      </header>
+      <main class="bg-customSand px-15 md:px-[51px] desktop:px-[45px]">
+        <h1
+          class="text-customBlack text-2xl not-italic font-bold font-cormorant-garamond text-center pt-9 md:text-[34px] md:pt-55"
+        >
+          Log In
+        </h1>
+        <form
+          class="w-full min-w-240 flex flex-col pb-[5px] pt-[11.5px] gap-[14.8px] md:pt-[22.5px] md:gap-[17px] md:pb-[6px]"
+        >
+          <label for="email"></label>
+          <input
+            class="pb-[9px] border-b border-customBlack bg-customSand placeholder-customGray text-14 not-italic font-medium font-poppins"
+            type="email"
+            placeholder="Your E-mail"
+          />
+          <label for="password"></label>
+          <input
+            class="pb-[9px] border-b border-customBlack bg-customSand placeholder-customGray text-14 not-italic font-medium font-poppins"
+            type="password"
+            placeholder="Password"
+          />
+        </form>
+        <p
+          class="text-customGray font-poppins text-xs font-medium not-italic text-end pb-[37px] md:pr-px md:pb-[46px]"
+        >
+          Forgot your password?
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="w-full min-w-240 min-h-[68px] bg-customBrown border border-bg-customBrown border-solid text-center text-white text-base font-medium font-poppins"
+          >
+            Log In
+          </button>
+        </div>
+        <p
+          class="text-customGray font-poppins text-sm font-medium not-italic pb-10 pt-15 pl-2 pr-[7px] text-center md:pb-55 desktop:pl-0 desktop:pr-[5.5px]"
+        >
+          Don't have an account?
+          <button
+            class="text-customBlack font-poppins text-sm font-medium not-italic desktop:pl-[5px]"
+          >
+            Sign up
+          </button>
+        </p>
+      </main>
+    </section>
+  </body>
 </html>
