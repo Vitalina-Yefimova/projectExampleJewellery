@@ -11,8 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -42,23 +40,51 @@
               1536: "1536px",
             },
             width: {
+              15: "15px",
               25: "25px",
               66: "66px",
+              250: "250px",
             },
             height: {
+              15: "15px",
               18: "18px",
               66: "66px",
+              68: "68px",
             },
             padding: {
+              13: "13px",
               15: "15px",
+              17: "17px",
+              18: "18px",
+              21: "21px",
+              22: "22px",
+              23: "23px",
+              25: "25px",
+              26: "26px",
               30: "30px",
+              38: "38px",
+              42: "42px",
+              45: "45px",
+              50: "50px",
+              57: "57px",
+              63: "63px",
+              70: "70px",
+            },
+            margin: {
+              15: "15px",
               45: "45px",
             },
-            lineHeight: {
-              130: "1.3",
-            },
             gap: {
+              13: "13px",
+              18: "18px",
               30: "30px",
+              35: "35px",
+            },
+            inset: {
+              23: "23px",
+            },
+            lineHeight: {
+              1.3: "1.3",
             },
             letterSpacing: {
               1.02: "1.02px",
@@ -80,7 +106,7 @@
   </head>
   <body>
     <header
-      class="flex flex-row justify-between items-center px-15 md:px-45 desktop:px-[98px] py-5 md:py-30 desktop:pb-[18px]"
+      class="flex flex-row justify-between items-center px-15 md:px-45 desktop:px-[98px] py-5 md:py-30 desktop:pb-18"
     >
       <button class="desktop:hidden">
         <svg
@@ -95,7 +121,7 @@
       <div class="hidden desktop:flex gap-[15px] desktop:mb-[22px]">
         <button>
           <svg
-            class="w-3.5 h-3.5 2xl:w-6 2xl:h-6"
+            class="w-3.5 h-3.5"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 14 14"
             fill="none"
@@ -108,12 +134,12 @@
         </button>
         <input
           type="text"
-          class="text-customGray font-poppins text-sm 2xl:text-3xl not-italic font-medium"
+          class="text-customGray font-poppins text-sm not-italic font-medium"
           placeholder="Type here to search"
         />
       </div>
       <svg
-        class="w-[52px] mr-[6px] desktop:mr-0 md:w-66 h-[52px] md:h-66 2xl:w-24 2xl:h-24"
+        class="w-[52px] mr-1.5 desktop:mr-0 md:w-66 h-[52px] md:h-66"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 52 52"
         fill="none"
@@ -143,21 +169,21 @@
         class="hidden desktop:flex items-center gap-[36px] desktop:pl-[89px] mb-[21px]"
       >
         <a
-          class="text-customBlack font-poppins text-sm 2xl:text-3xl not-italic font-medium"
+          class="text-customBlack font-poppins text-sm not-italic font-medium"
           target="_blank"
           href="login.html"
         >
           Login
         </a>
-        <div class="flex items-center gap-[6px]">
+        <div class="flex items-center gap-1.5">
           <a
-            class="text-customBlack font-poppins text-sm 2xl:text-3xl not-italic font-medium"
+            class="text-customBlack font-poppins text-sm not-italic font-medium"
             href="#"
           >
             Cart
           </a>
           <p
-            class="text-customBlack font-poppins text-sm 2xl:text-3xl not-italic font-medium"
+            class="text-customBlack font-poppins text-sm not-italic font-medium"
           >
             0
           </p>
@@ -166,13 +192,13 @@
     </header>
     <main>
       <section
-        class="hidden md:hidden desktop:flex flex-col gap-[35px] md:gap-[46px] bg-customBrown pb-[39px] pt-[10px] px-15 md:px-45 md:pb-[70px] desktop:items-center desktop:bg-white desktop:px-0 desktop:py-0 desktop:gap-0 desktop:pl-[10px]"
+        class="hidden md:hidden desktop:flex flex-col gap-35 md:gap-[46px] bg-customBrown pb-[39px] pt-[10px] px-15 md:px-45 md:pb-70 desktop:items-center desktop:bg-white desktop:px-0 desktop:py-0 desktop:gap-0 desktop:pl-[10px]"
       >
         <div
           class="hidden desktop:flex flex-col bg-customBeige w-full h-px"
         ></div>
         <ul
-          class="hidden md:hidden desktop: flex flex-col gap-[21px] text-white font-poppins text-24 not-italic font-medium desktop:flex desktop:flex-row desktop:gap-[35px] desktop:text-customBlack desktop:text-16 desktop:pt-[18px] desktop:pb-[19px] 2xl:text-4xl"
+          class="hidden md:hidden desktop: flex flex-col gap-[21px] text-white font-poppins text-24 not-italic font-medium desktop:flex desktop:flex-row desktop:gap-35 desktop:text-customBlack desktop:text-16 desktop:pt-18 desktop:pb-[19px]"
         >
           <li><a href="#">What's new</a></li>
           <li><a href="#">Chokers</a></li>
@@ -199,7 +225,7 @@
         />
         <div class="absolute inset-0 bg-customBrown0.7"></div>
         <div
-          class="absolute inset-0 flex flex-col justify-center shrink-0 pl-[21px] pr-5 md:pl-[15px] md:pr-[17px]"
+          class="absolute inset-0 flex flex-col justify-center shrink-0 pl-21 pr-5 md:pl-15 md:pr-17"
         >
           <h1
             class="font-cormorant-garamond text-34 text-center text-white not-italic font-bold leading-[1] desktop:leading-[1.14]"
@@ -215,30 +241,30 @@
       </section>
       <div class="flex justify-center desktop:hidden">
         <button
-          class="w-full min-w-[290px] min-h-[68px] my-10 mx-[15px] md:min-w-[678px] md:mx-[45px] md:my-[50px] bg-customBrown border border-bg-customBrown border-solid text-center text-white text-base font-medium font-poppins"
+          class="w-full min-w-[290px] min-h-[68px] my-10 mx-15 md:min-w-[678px] md:mx-45 md:my-[50px] bg-customBrown border border-bg-customBrown border-solid text-center text-white text-base font-medium font-poppins"
         >
           <a href="filter.html">Filter</a>
         </button>
       </div>
-      <section class="desktop:flex desktop:px-[98px]">
+      <section class="desktop:flex justify-center">
         <div
           class="hidden md:hidden desktop:flex desktop:flex-col desktop:pt-20"
         >
-          <div class="flex gap-[77px] border border-solid border-customBrown">
-            <div>
+          <div class="flex border border-solid border-customBrown relative">
+            <div class="relative">
               <h2
-                class="text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pl-[25px] pt-[23px]"
+                class="text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 pl-25 pt-23"
               >
                 Product
               </h2>
-              <div class="flex flex-col pl-[34px] pb-[26px] pt-6 gap-3">
+              <div class="flex flex-col pl-[34px] pb-26 pt-6 gap-3">
                 <label class="flex items-center gap-[10px]">
                   <input type="checkbox" class="hidden peer" />
                   <span
-                    class="h-[15px] w-[15px] bg-customBrown peer-checked:bg-customBrown"
+                    class="h-15 w-15 bg-customBrown peer-checked:bg-customBrown"
                   ></span>
                   <span
-                    class="text-customBlack font-poppins not-italic font-medium text-14 leading-[1.3]"
+                    class="text-customBlack font-poppins not-italic font-medium text-14 leading-1.3"
                   >
                     Necklaces
                   </span>
@@ -246,10 +272,10 @@
                 <label class="flex items-center gap-[10px]">
                   <input type="checkbox" class="hidden peer" />
                   <span
-                    class="h-[15px] w-[15px] bg-customBrown peer-checked:bg-customBrown"
+                    class="h-15 w-15 bg-customBrown peer-checked:bg-customBrown"
                   ></span>
                   <span
-                    class="text-customBlack font-poppins not-italic font-medium text-14 leading-[1.3]"
+                    class="text-customBlack font-poppins not-italic font-medium text-14 leading-1.3"
                   >
                     Chokers
                   </span>
@@ -260,7 +286,7 @@
                     class="h-[15.2px] w-4 border border-customBrown bg-white peer-checked:border-customBrown peer-checked:bg-customBrown rounded-none"
                   ></span>
                   <span
-                    class="text-customBlack font-poppins not-italic font-medium text-14 leading-[1.3]"
+                    class="text-customBlack font-poppins not-italic font-medium text-14 leading-1.3"
                   >
                     Rings
                   </span>
@@ -268,10 +294,10 @@
                 <label class="flex items-center gap-[10px]">
                   <input type="checkbox" class="hidden peer" />
                   <span
-                    class="h-[15px] w-[15px] bg-customBrown peer-checked:bg-customBrown"
+                    class="h-15 w-15 bg-customBrown peer-checked:bg-customBrown"
                   ></span>
                   <span
-                    class="text-customBlack font-poppins not-italic font-medium text-14 leading-[1.3]"
+                    class="text-customBlack font-poppins not-italic font-medium text-14 leading-1.3"
                   >
                     Earrings
                   </span>
@@ -279,7 +305,7 @@
               </div>
             </div>
             <svg
-              class="mt-7"
+              class="absolute top-7 right-23"
               xmlns="http://www.w3.org/2000/svg"
               width="17"
               height="10"
@@ -289,14 +315,14 @@
               <path d="M16 9L8.5 1L1 9" stroke="#A87B62" />
             </svg>
           </div>
-          <div class="flex border border-solid border-customBrown gap-[117px]">
+          <div class="flex border border-solid border-customBrown relative">
             <h2
-              class="text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pt-[23px] pb-[22px] pl-[25px]"
+              class="text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 pt-23 pb-22 pl-25"
             >
               Material
             </h2>
             <svg
-              class="mt-7"
+              class="absolute top-7 right-23"
               xmlns="http://www.w3.org/2000/svg"
               width="17"
               height="10"
@@ -306,14 +332,14 @@
               <path d="M1 1L8.5 9L16 1" stroke="#A87B62" />
             </svg>
           </div>
-          <div class="flex border border-solid border-customBrown gap-[102px]">
+          <div class="flex border border-solid border-customBrown relative">
             <h2
-              class="text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pt-[23px] pb-[22px] pl-[25px]"
+              class="text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 pt-23 pb-22 pl-25"
             >
               Collection
             </h2>
             <svg
-              class="mt-7"
+              class="absolute top-7 right-23"
               xmlns="http://www.w3.org/2000/svg"
               width="17"
               height="10"
@@ -323,384 +349,390 @@
               <path d="M1 1L8.5 9L16 1" stroke="#A87B62" />
             </svg>
           </div>
-          <div class="flex flex-col border border-solid border-customBrown">
-            <div>
-              <h2
-                class="text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3]"
-              >
-                Price
-              </h2>
-              <svg
-                class="mt-7"
-                xmlns="http://www.w3.org/2000/svg"
-                width="17"
-                height="10"
-                viewBox="0 0 17 10"
-                fill="none"
-              >
-                <path d="M16 9L8.5 1L1 9" stroke="#A87B62" />
-              </svg>
-            </div>
-            <div class="relative w-[200px]">
-              <div class="h-1 bg-customSand relative">
+          <div
+            class="flex flex-col border border-solid border-customBrown relative pt-22 pl-6 pb-17"
+          >
+            <h2
+              class="text-customBlack font-poppins not-italic font-medium text-16 leading-1.3"
+            >
+              Price
+            </h2>
+            <svg
+              class="absolute top-7 right-23"
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="10"
+              viewBox="0 0 17 10"
+              fill="none"
+            >
+              <path d="M16 9L8.5 1L1 9" stroke="#A87B62" />
+            </svg>
+            <div class="relative w-[200px] pt-26">
+              <div class="h-px bg-customSand relative">
                 <div
-                  class="absolute h-1 bg-customBrown left-1/4 right-1/4"
+                  class="absolute h-px bg-customBrown left-[60px] right-[50px]"
                 ></div>
                 <div
-                  class="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-customBrown rounded-full"
+                  class="absolute top-px left-[53px] -translate-x-1/2 -translate-y-1/2 w-15 h-15 bg-customBrown rounded-full"
                 ></div>
                 <div
-                  class="absolute top-1/2 left-3/4 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-customBrown rounded-full"
+                  class="absolute top-px right-[27px] -translate-x-1/2 -translate-y-1/2 w-15 h-15 bg-customBrown rounded-full"
                 ></div>
               </div>
-              <div class="flex justify-between mt-2">
-                <span class="text-black font-semibold">$ 55</span>
-                <span class="text-black font-semibold">$ 155</span>
+              <div class="flex justify-between pt-[14px]">
+                <span
+                  class="text-customBlack font-poppins not-italic font-medium text-14 leading-1.3 pt pl-38"
+                  >$ 55</span
+                >
+                <span
+                  class="text-customBlack font-poppins not-italic font-medium text-14 leading-1.3 pr-6"
+                  >$ 155</span
+                >
               </div>
             </div>
           </div>
           <button
-            class="w-[250px] h-[68px] bg-customBrown border border-bg-customBrown border-solid text-center text-white text-base font-medium font-poppins"
+            class="w-250 h-68 bg-customBrown border border-bg-customBrown border-solid text-center text-white text-base font-medium font-poppins mt-[35px] mb-[25px]"
           >
             Apply
           </button>
           <button
-            class="w-[250px] h-[68px] bg-white border border-customBlack border-solid text-center text-customBrown text-base font-medium font-poppins"
+            class="w-250 h-68 bg-white border border-customBrown border-solid text-center text-customBlack text-base font-medium font-poppins"
           >
             Clear All
           </button>
         </div>
         <div>
           <ul
-            class="grid grid-rows-6 grid-cols-2 gap-x-[30px] gap-y-[24px] px-15 md:grid-rows-4 md:grid-cols-3 md:px-[45px] md:gap-x-[30px] md:gap-y-[35px] desktop:grid-rows-[auto_auto_auto_auto] desktop:grid-cols[auto_auto_auto] desktop:gap-y-[40px] desktop:gap-x-[30px] desktop:pl-[50px] desktop:pt-20 desktop:pr-0"
+            class="grid grid-rows-6 grid-cols-2 gap-x-[30px] gap-y-[24px] px-15 md:grid-rows-4 md:grid-cols-3 md:px-45 md:gap-y-35 desktop:grid-rows-[auto_auto_auto_auto] desktop:grid-cols[auto_auto_auto] desktop:gap-x-30 desktop:pl-50 desktop:pt-20 desktop:pr-0"
           >
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/double-pearl-earrings-mobile.jpg"
                 alt="Double pearl earrings"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/double-pearl-earrings-tab.jpg"
                 alt="Double pearl earrings"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/double-pearl-earrings-desktop.jpg"
                 alt="Double pearl earrings"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 desktop:pl-3"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5 desktop:pl-3"
               >
                 Double pearl earrings
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
               >
                 $ 115
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/black-choker-gold-bead-mobile.jpg"
                 alt="Black choker with gold bead"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/black-choker-gold-bead-tab.jpg"
                 alt="Black choker with gold bead"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/black-choker-gold-bead-desktop.jpg"
                 alt="Black choker with gold bead"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 desktop:pl-[7px] desktop:pt-[21px]"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5 desktop:pl-[7px] desktop:pt-21"
               >
                 Choker with gold bead
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] desktop:pl-[15px]"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5 desktop:pl-15"
               >
                 $ 55
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/gold-layered-necklace-mobile.jpg"
                 alt="Gold layered necklace"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/gold-layered-necklace-tab.jpg"
                 alt="Gold layered necklace"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/gold-layered-necklace-desktop.jpg"
                 alt="Gold layered necklace"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 desktop:pl-[11px] desktop:pt-[21px]"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5 desktop:pl-[11px] desktop:pt-21"
               >
                 Gold layered necklace
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] desktop:pl-[2px]"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5 desktop:pl-0.5"
               >
                 $ 155
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/blue-gemstone-pendant-mobile.jpg"
                 alt="Blue gemstone pendant"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/blue-gemstone-pendant-tab.jpg"
                 alt="Blue gemstone pendant"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/blue-gemstone-pendant-desktop.jpg"
                 alt="Blue gemstone pendant"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5"
               >
                 Blue gemstone pendant
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5 desktop:pl-[5px]"
               >
                 $ 105
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/blue-earrings-mobile.jpg"
                 alt="Boho earrings"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/boho-earrings-tab.jpg"
                 alt="Boho earrings"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/boho-earrings-desktop.jpg"
                 alt="Boho earrings"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5"
               >
                 Boho earrings
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
               >
                 $ 75
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/bird-necklace-mobile.jpg"
                 alt="Gold bird necklace"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/bird-necklace-tab.jpg"
                 alt="Gold bird necklace"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/bird-necklace-desktop.jpg"
                 alt="Gold bird necklace"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5"
               >
                 Gold bird necklace
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
               >
                 $ 135
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/black-leather-choker-necklace-mobile.jpg"
                 alt="Black leather choker necklace"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/black-leather-choker-necklace-tab.jpg"
                 alt="Black leather choker necklace"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/black-leather-choker-necklace-desktop.jpg"
                 alt="Black leather choker necklace"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5"
               >
                 Black leather choker
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
               >
                 $ 85
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/purple-gemstone-necklace-mobile.jpg"
                 alt="Necklace with amethyst"
               />
               <img
-                class="hidden desktop:hidden md:flex"
-                src="img/purple-gemstone-necklace-tab.jpg"
+                class="hidden desktop:hidden md:flex w-full"
+                src="img/purple-gemstone-necklace-tab-catalog.jpg"
                 alt="Necklace with amethyst"
               />
               <img
-                class="hidden md:hidden desktop:flex"
-                src="img/purple-gemstone-necklace-desktop.jpg"
+                class="hidden md:hidden desktop:flex w-full"
+                src="img/purple-gemstone-necklace-desktop-catalog.jpg"
                 alt="Necklace with amethyst"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5"
               >
                 Necklace with amethyst
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
               >
                 $ 145
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/elephant-earrings-mobile.jpg"
                 alt="Elephant earrings"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/elephant-earrings-tab.jpg"
                 alt="Elephant earrings"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/elephant-earrings-desktop.jpg"
                 alt="Elephant earrings"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-[16.5px] md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-[16.5px] md:pt-5"
               >
                 Elephant earrings
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
               >
                 $ 95
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/threader-necklace-closeup-mobile.jpg"
                 alt="Threader necklace - closeup"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/threader-necklace-closeup-tab.jpg"
                 alt="Threader necklace - closeup"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/threader-necklace-closeup-desktop.jpg"
                 alt="Threader necklace - closeup"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 md:pt-5"
               >
                 Threader necklace
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
               >
                 $ 115
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/origami-crane-necklace-mobile.jpg"
                 alt="Origami crane necklace"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/origami-crane-necklace-tab.jpg"
                 alt="Origami crane necklace"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/origami-crane-necklace-desktop.jpg"
                 alt="Origami crane necklace"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-[16.4px] md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-[16.4px] md:pt-5"
               >
                 Origami crane necklace
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[5px] md:pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[5px] md:pt-1.5"
               >
                 $ 105
               </p>
             </li>
             <li>
               <img
-                class="md:hidden desktop:hidden"
+                class="md:hidden desktop:hidden w-full"
                 src="img/marble-earrings-mobile.jpg"
                 alt="Marble earrings"
               />
               <img
-                class="hidden desktop:hidden md:flex"
+                class="hidden desktop:hidden md:flex w-full"
                 src="img/marble-earrings-tab.jpg"
                 alt="Marble earrings"
               />
               <img
-                class="hidden md:hidden desktop:flex"
+                class="hidden md:hidden desktop:flex w-full"
                 src="img/marble-earrings-desktop.jpg"
                 alt="Marble earrings"
               />
               <h3
-                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 2xl:text-3xl"
+                class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-1.3 px-px pt-4 desktop:pl-2 md:pt-5"
               >
                 Marble earrings
               </h3>
               <p
-                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-[6px] 2xl:text-2xl"
+                class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
               >
                 $ 95
               </p>
             </li>
           </ul>
           <div
-            class="md:flex md:justify-between md:pb-[73px] md:pt-[70px] px-[45px]"
+            class="md:flex md:justify-between md:pb-[73px] md:pt-70 px-45 desktop:pl-50 desktop:pr-0"
           >
             <p
               class="hidden md:flex text-customBlack text-center font-poppins text-base font-medium not-italic md:text-16"
@@ -708,12 +740,12 @@
               Previous
             </p>
             <ul
-              class="flex justify-center gap-[23px] text-customGray text-center font-poppins text-base font-medium not-italic pt-[38px] pb-[63px] md:pt-0 md:pb-0 md:text-16 md:gap-0 md:pr-[33px]"
+              class="flex justify-center gap-[23px] text-customGray text-center font-poppins text-base font-medium not-italic pt-38 pb-63 md:pt-0 md:pb-0 md:text-16 md:gap-0 md:pr-[33px]"
             >
-              <li class="text-customBlack md:pr-[13px]">1</li>
-              <li class="md:pr-[13px]">2</li>
-              <li class="md:pr-[13px]">3</li>
-              <li class="md:pr-[13px]">4</li>
+              <li class="text-customBlack md:pr-13">1</li>
+              <li class="md:pr-13">2</li>
+              <li class="md:pr-13">3</li>
+              <li class="md:pr-13">4</li>
               <li>5</li>
             </ul>
             <p
@@ -726,30 +758,30 @@
       </section>
     </main>
     <footer
-      class="bg-black pb-[60px] pt-[49px] md:pt-[50px] desktop:pt-[86px] desktop:flex desktop:flex-row desktop:gap-[67px]"
+      class="bg-black pb-[60px] pt-[49px] md:pt-50 desktop:pt-[86px] desktop:flex desktop:flex-row desktop:gap-[67px]"
     >
-      <div class="desktop:pl-[42px]">
+      <div class="desktop:pl-42">
         <h2
-          class="text-white font-cormorant-garamond text-34 font-bold not-italic tracking-1.02 leading-[1.3] pl-[13px] pr-[60px] pb-[14px] md:pr-[316px] md:pb-[10px] md:pl-[45px] md:tracking-[0.84px] desktop:pr-[118px] desktop:pl-[56px] desktop:pb-[10px] desktop:pt-[2px]"
+          class="text-white font-cormorant-garamond text-34 font-bold not-italic tracking-1.02 leading-1.3 pl-13 pr-[60px] pb-[14px] md:pr-[316px] md:pb-[10px] md:pl-45 md:tracking-[0.84px] desktop:pr-[118px] desktop:pl-[56px] desktop:pb-[10px] desktop:pt-0.5"
         >
           The good stuff in your inbox
         </h2>
         <p
-          class="text-customGray text-16 font-poppins font-normal not-italic leading-[1.3] pr-[57px] pl-15 pb-[42px] md:pl-[46px] desktop:pr-[13px] desktop:pl-[57px]"
+          class="text-customGray text-16 font-poppins font-normal not-italic leading-1.3 pr-57 pl-15 pb-42 md:pl-[46px] desktop:pr-13 desktop:pl-57"
         >
           News and updates from CH. No spam, we promise.
         </p>
         <div
-          class="flex gap-[91px] pb-[9px] pl-[16px] pr-[13px] md:pl-[45px] md:pb-[10px] md:gap-[377px] desktop:pl-[56px] desktop:pb-[10px] desktop:gap-[317px]"
+          class="flex gap-[91px] pb-[7px] pl-4 pr-13 md:pl-45 md:pb-[7px] md:gap-[377px] desktop:pl-14 desktop:pb-2 desktop:gap-[317px]"
         >
           <p
-            class="text-customGray text-left text-14 font-poppins font-normal not-italic leading-[1.3] pt-[2px] desktop:pt-[3px]"
+            class="text-customGray text-left text-14 font-poppins font-normal not-italic leading-1.3 pt-0.5 md:pt-[3px] desktop:pt-[5px]"
           >
             Your E-mail
           </p>
           <div class="flex gap-3 pl-15 items-center md:pl-0 desktop:pt-px">
             <p
-              class="text-white text-right text-16 font-poppins font-medium not-italic leading-[1.3]"
+              class="text-white text-right text-16 font-poppins font-medium not-italic leading 1.3"
             >
               Sign Up
             </p>
@@ -768,14 +800,14 @@
           </div>
         </div>
         <div
-          class="bg-white h-px w-[290px] ml-[15px] mb-[44px] md:w-[560px] md:ml-[45px] desktop:w-[500px] desktop:ml-[56px]"
+          class="bg-white h-px w-[290px] ml-15 mb-[43px] md:w-[560px] md:ml-45 desktop:w-[500px] desktop:ml-[56px]"
         ></div>
       </div>
       <div
-        class="flex flex-col gap-[39px] pl-15 md:flex-row md:pl-[45px] md:gap-[87px] desktop:flex-row desktop:pl-0 desktop:gap-[72px]"
+        class="flex flex-col gap-[39px] pl-15 md:flex-row md:pl-45 md:gap-[87px] desktop:flex-row desktop:pl-0 desktop:gap-[72px]"
       >
         <ul
-          class="flex flex-col gap-[18px] text-white text-16 font-poppins font-medium not-italic leading-1.3 desktop:pt-2"
+          class="flex flex-col gap-18 text-white text-16 font-poppins font-medium not-italic desktop:pt-2"
         >
           <li>Ordering & Payment</li>
           <li>Terms & Conditions</li>
@@ -783,7 +815,7 @@
           <li>Delivery</li>
         </ul>
         <ul
-          class="flex flex-col gap-[18px] text-white text-16 font-poppins font-medium not-italic leading-1.3 desktop:pt-2"
+          class="flex flex-col gap-18 text-white text-16 font-poppins font-medium not-italic desktop:pt-2"
         >
           <li>About CH</li>
           <li>Stores & Hours</li>
@@ -791,7 +823,7 @@
           <li>Contact Us</li>
         </ul>
         <div
-          class="flex gap-30 pt-1 md:flex-col md:gap-[18px] md:pt-0 desktop:pl-[35px] desktop:pt-[7px]"
+          class="flex gap-30 pt-1 md:flex-col md:gap-18 md:pt-0 desktop:pl-[35px] desktop:pt-[7px]"
         >
           <svg
             class="md:hidden desktop:hidden"
@@ -806,7 +838,7 @@
               fill="white"
             />
           </svg>
-          <div class="hidden md:flex md:items-center md:gap-[20px]">
+          <div class="hidden md:flex md:items-center md:gap-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="8"
@@ -819,9 +851,7 @@
                 fill="white"
               />
             </svg>
-            <p
-              class="text-white text-16 font-poppins font-medium not-italic leading-1.3"
-            >
+            <p class="text-white text-16 font-poppins font-medium not-italic">
               Facebook
             </p>
           </div>
@@ -838,7 +868,7 @@
               fill="white"
             />
           </svg>
-          <div class="hidden md:flex md:items-center md:gap-[13px]">
+          <div class="hidden md:flex md:items-center md:gap-13">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -851,9 +881,7 @@
                 fill="white"
               />
             </svg>
-            <p
-              class="text-white text-16 font-poppins font-medium not-italic leading-1.3"
-            >
+            <p class="text-white text-16 font-poppins font-medium not-italic">
               Instagram
             </p>
           </div>
@@ -870,7 +898,7 @@
               fill="white"
             />
           </svg>
-          <div class="hidden md:flex md:items-center md:gap-[13px]">
+          <div class="hidden md:flex md:items-center md:gap-13">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -883,9 +911,7 @@
                 fill="white"
               />
             </svg>
-            <p
-              class="text-white text-16 font-poppins font-medium not-italic leading-1.3"
-            >
+            <p class="text-white text-16 font-poppins font-medium not-italic">
               Pinterest
             </p>
           </div>
@@ -902,7 +928,7 @@
               fill="white"
             />
           </svg>
-          <div class="hidden md:flex md:items-center md:gap-[13px]">
+          <div class="hidden md:flex md:items-center md:gap-13">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -915,9 +941,7 @@
                 fill="white"
               />
             </svg>
-            <p
-              class="text-white text-16 font-poppins font-medium not-italic leading-1.3"
-            >
+            <p class="text-white text-16 font-poppins font-medium not-italic">
               Twitter
             </p>
           </div>
