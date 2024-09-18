@@ -42,7 +42,6 @@
               339: "339px",
               768: "768px",
               1366: "1366px",
-              1536: "1536px",
             },
             width: {
               25: "25px",
@@ -81,7 +80,6 @@
               98: "98px",
             },
             margin: {
-              23: "23px",
               31: "31px",
               50: "50px",
               164: "164px",
@@ -115,7 +113,7 @@
       };
     </script>
   </head>
-  <body class="w-full min-w-320 md:min-w-768 desktop:min-w-1366 2xl:min-w-1536">
+  <body class="w-full min-w-320 md:min-w-768 desktop:min-w-1366">
     <header
       class="flex flex-row justify-between items-center px-15 md:px-45 desktop:px-98 py-5 md:py-30 desktop:pb-18"
     >
@@ -132,7 +130,7 @@
       <div class="hidden desktop:flex gap-[15px] desktop:mb-[22px]">
         <button>
           <svg
-            class="w-3.5 h-3.5 2xl:w-6 2xl:h-6"
+            class="w-3.5 h-3.5"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 14 14"
             fill="none"
@@ -145,12 +143,12 @@
         </button>
         <input
           type="text"
-          class="text-customGray font-poppins text-sm 2xl:text-3xl not-italic font-medium"
+          class="text-customGray font-poppins text-sm not-italic font-medium"
           placeholder="Type here to search"
         />
       </div>
       <svg
-        class="w-[52px] mr-1.5 desktop:mr-0 md:w-66 h-[52px] md:h-66 2xl:w-24 2xl:h-24"
+        class="w-[52px] mr-1.5 desktop:mr-0 md:w-66 h-[52px] md:h-66"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 52 52"
         fill="none"
@@ -180,7 +178,7 @@
         class="hidden desktop:flex items-center gap-[36px] desktop:pl-[89px] mb-[21px]"
       >
         <a
-          class="text-customBlack font-poppins text-sm 2xl:text-3xl not-italic font-medium"
+          class="text-customBlack font-poppins text-sm not-italic font-medium"
           target="_blank"
           href="login.html"
         >
@@ -188,13 +186,13 @@
         </a>
         <div class="flex items-center gap-1.5">
           <a
-            class="text-customBlack font-poppins text-sm 2xl:text-3xl not-italic font-medium"
+            class="text-customBlack font-poppins text-sm not-italic font-medium"
             href="#"
           >
             Cart
           </a>
           <p
-            class="text-customBlack font-poppins text-sm 2xl:text-3xl not-italic font-medium"
+            class="text-customBlack font-poppins text-sm not-italic font-medium"
           >
             0
           </p>
@@ -203,7 +201,7 @@
     </header>
     <main>
       <section
-        class="flex flex-col gap-35 md:gap-[46px] bg-customBrown pb-39 pt-[10px] px-15 md:px-45 md:pb-70 desktop:flex desktop:items-center desktop:bg-white desktop:px-0 desktop:py-0 desktop:gap-0 desktop:pl-[10px]"
+        class="hidden flex flex-col gap-35 md:gap-[46px] bg-customBrown pb-39 pt-[10px] px-15 md:px-45 md:pb-70 desktop:flex desktop:items-center desktop:bg-white desktop:px-0 desktop:py-0 desktop:gap-0 desktop:pl-[10px]"
       >
         <div class="desktop:hidden relative flex items-center">
           <input
@@ -226,7 +224,7 @@
           class="hidden desktop:flex flex-col bg-customBeige w-full h-px"
         ></div>
         <ul
-          class="flex flex-col gap-21 text-white font-poppins text-24 not-italic font-medium desktop:flex desktop:flex-row desktop:gap-35 desktop:text-customBlack desktop:text-16 desktop:pt-18 desktop:pb-19 2xl:text-4xl"
+          class="flex flex-col gap-21 text-white font-poppins text-24 not-italic font-medium desktop:flex desktop:flex-row desktop:gap-35 desktop:text-customBlack desktop:text-16 desktop:pt-18 desktop:pb-19"
         >
           <li><a href="#">What's new</a></li>
           <li><a href="#">Chokers</a></li>
@@ -270,12 +268,12 @@
           class="absolute inset-0 flex flex-col justify-center shrink-0 px-10 md:pl-0 md:pr-17 desktop:px-0"
         >
           <h1
-            class="font-cormorant-garamond text-38 text-center text-white not-italic font-bold leading-[1.1] tracking-[1.14px] md:text-[45px] md:tracking-[1.4px] desktop:leading-[1.14] 2xl:text-8xl"
+            class="font-cormorant-garamond text-38 text-center text-white not-italic font-bold leading-[1.1] tracking-[1.14px] md:text-[45px] md:tracking-[1.4px] desktop:leading-[1.14]"
           >
             PERFECTION
           </h1>
           <p
-            class="font-cormorant-garamond text-34 text-center text-white italic font-normal leading-[1.1] md:text-38 2xl:text-8xl"
+            class="font-cormorant-garamond text-34 text-center text-white italic font-normal leading-[1.1] md:text-38"
           >
             made to be yours
           </p>
@@ -283,7 +281,7 @@
       </section>
       <section class="flex flex-col items-center">
         <div
-          class="md:flex md:gap-[143px] items-end desktop:items-start desktop:gap-[396.5px] 2xl:gap-[670px]"
+          class="md:flex md:gap-[143px] items-end desktop:items-start desktop:gap-[396.5px]"
         >
           <svg
             class="hidden desktop:hidden md:flex md:mb-31"
@@ -299,7 +297,7 @@
             />
           </svg>
           <svg
-            class="hidden desktop:flex desktop:mt-164 2xl:w-20 2xl:h-5"
+            class="hidden desktop:flex desktop:mt-164"
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="11"
@@ -313,18 +311,18 @@
           </svg>
           <div class="flex flex-col items-center">
             <h2
-              class="text-customBlack font-cormorant-garamond text-34 font-bold not-italic pt-[55px] px-[110px] pb-5 md:pt-[65px] desktop:pt-[116px] desktop:pb-6 2xl:text-7xl"
+              class="text-customBlack font-cormorant-garamond text-34 font-bold not-italic pt-[55px] px-[110px] pb-5 md:pt-[65px] desktop:pt-[116px] desktop:pb-6"
             >
               New In
             </h2>
             <a
               href="catalog.html"
               target="_blank"
-              class="text-customBlack font-poppins text-base font-medium not-italic pb-2 leading-[0.9] desktop:pb-[3px] 2xl:text-3xl"
+              class="text-customBlack font-poppins text-base font-medium not-italic pb-2 leading-[0.9] desktop:pb-[3px]"
             >
               Shop Now
             </a>
-            <div class="bg-customBrown h-px w-20 2xl:w-40"></div>
+            <div class="bg-customBrown h-px w-20"></div>
           </div>
           <svg
             class="hidden desktop:hidden md:flex md:mb-31"
@@ -340,7 +338,7 @@
             />
           </svg>
           <svg
-            class="hidden desktop:flex desktop:mt-164 2xl:w-20 2xl:h-5"
+            class="hidden desktop:flex desktop:mt-164"
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="11"
@@ -354,7 +352,7 @@
           </svg>
         </div>
         <ul
-          class="grid grid-cols-2 gap-30 pt-10 pb-7 px-15 md:pt-50 md:pb-39 desktop:grid-cols-4 desktop:pt-[60px] desktop:pb-49 2xl:gap-[150px]"
+          class="grid grid-cols-2 gap-30 pt-10 pb-7 px-15 md:pt-50 md:pb-39 desktop:grid-cols-4 desktop:pt-[60px] desktop:pb-49"
         >
           <li>
             <img
@@ -373,13 +371,13 @@
               alt="Necklace with purple gemstone"
             />
             <h3
-              class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pt-4 md:pt-5 md:pl-4 desktop:pl-0 2xl:text-3xl"
+              class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pt-4 md:pt-5 md:pl-4 desktop:pl-0"
             >
               Necklace with
               <span class="pl-[5px] md:pl-0"> amethyst </span>
             </h3>
             <p
-              class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5 2xl:text-2xl"
+              class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
             >
               $ 145
             </p>
@@ -401,12 +399,12 @@
               alt="Necklace - layered choker"
             />
             <h3
-              class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5 2xl:text-3xl"
+              class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] px-px pt-4 md:pt-5"
             >
               Layered choker
             </h3>
             <p
-              class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5 2xl:text-2xl"
+              class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
             >
               $ 115
             </p>
@@ -418,12 +416,12 @@
               alt="Dainty gold layered necklace"
             />
             <h3
-              class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pt-4 desktop:pt-5 2xl:text-3xl"
+              class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pt-4 desktop:pt-5"
             >
               Gold chain
             </h3>
             <p
-              class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5 2xl:text-2xl"
+              class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
             >
               $ 215
             </p>
@@ -435,19 +433,19 @@
               alt="Galaxy earrings"
             />
             <h3
-              class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pt-4 desktop:pt-5 desktop:pl-[5px] 2xl:text-3xl"
+              class="text-center text-customBlack font-poppins not-italic font-medium text-16 leading-[1.3] pt-4 desktop:pt-5 desktop:pl-[5px]"
             >
               Galaxy earrings
             </h3>
             <p
-              class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5 2xl:text-2xl"
+              class="text-center text-customBlack font-poppins not-italic font-bold text-sm pt-1.5"
             >
               $ 95
             </p>
           </li>
         </ul>
         <ul
-          class="grid grid-cols-3 md:grid-cols-6 gap-[5px] items-center text-center text-customBlack font-poppins text-16 not-italic font-medium md:justify-items-start md:gap-[7px] desktop:grid-cols-3 2xl:text-4xl 2xl:gap-10"
+          class="grid grid-cols-3 md:grid-cols-6 gap-[5px] items-center text-center text-customBlack font-poppins text-16 not-italic font-medium md:justify-items-start md:gap-[7px] desktop:grid-cols-3"
         >
           <li class="pr-0.5 md:pl-[7px] desktop:pr-1">1</li>
           <li class="md:hidden desktop:hidden pr-0.5">of</li>
@@ -458,23 +456,23 @@
           <li class="desktop:hidden pr-1.5 md:text-customGray">6</li>
         </ul>
       </section>
-      <section class="pt-50">
+      <section class="pt-50 flex flex-col items-center">
         <div class="flex flex-col items-center pb-50 md:pb-[60px]">
           <h2
-            class="text-customBlack font-cormorant-garamond text-34 font-bold not-italic tracking-1.02 md:pt-[9px] desktop:pt-59 desktop:pb-px 2xl:text-7xl"
+            class="text-customBlack font-cormorant-garamond text-34 font-bold not-italic tracking-1.02 md:pt-[9px] desktop:pt-59 desktop:pb-px"
           >
             Blog
           </h2>
           <a
             href="#"
-            class="text-customBlack font-poppins text-base font-medium not-italic pb-2 pt-19 leading-[0.9] desktop:text-16 2xl:text-3xl"
+            class="text-customBlack font-poppins text-base font-medium not-italic pb-2 pt-19 leading-[0.9] desktop:text-16"
           >
             Read All
           </a>
-          <div class="bg-customBrown h-px w-16 2xl:w-[122px]"></div>
+          <div class="bg-customBrown h-px w-16"></div>
         </div>
         <div
-          class="grid grid-rows-3 gap-[38.6px] px-15 md:px-45 md:gap-[50px] desktop:grid-rows-[auto_auto] desktop:grid-cols-[auto_auto] desktop:gap-30 desktop:px-98 2xl:px-[950px]"
+          class="grid grid-rows-3 gap-[38.6px] px-15 md:px-45 md:gap-[50px] desktop:grid-rows-[auto_auto] desktop:grid-cols-[auto_auto] desktop:gap-30 desktop:px-98"
         >
           <div class="md:flex md:flex-row">
             <img
@@ -496,23 +494,23 @@
               class="flex flex-col items-center bg-customSand pt-11 pb-49 md:w-339 md:pt-[67px] desktop:w-285 desktop:h-300 desktop:pt-66"
             >
               <p
-                class="text-customGray text-center text-sm font-poppins text-medium not-italic pb-3 md:pb-[11px] md:pl-px desktop:pb-3 2xl:text-20"
+                class="text-customGray text-center text-sm font-poppins text-medium not-italic pb-3 md:pb-[11px] md:pl-px desktop:pb-3"
               >
                 September 30, 2019
               </p>
               <h3
-                class="text-center text-black text-26 font-cormorant-garamond font-semibold not-italic leading-[1.3] pb-10 pl-63 pr-16 md:pr-[62px] md:pb-41 desktop:pl-[60px] desktop:pb-10 2xl:text-2xl"
+                class="text-center text-black text-26 font-cormorant-garamond font-semibold not-italic leading-[1.3] pb-10 pl-63 pr-16 md:pr-[62px] md:pb-41 desktop:pl-[60px] desktop:pb-10"
               >
                 How to care for
                 <span class="pl-[5px]"> your jewellery </span>
               </h3>
               <a
                 href="#"
-                class="text-customBlack text-center font-poppins text-base font-medium not-italic pb-2 leading-[0.9] pr-0.5 md:pr-px desktop:pb-[7.5px] 2xl:text-2xl"
+                class="text-customBlack text-center font-poppins text-base font-medium not-italic pb-2 leading-[0.9] pr-0.5 md:pr-px desktop:pb-[7.5px]"
               >
                 Read Article
               </a>
-              <div class="bg-customBrown h-px w-97 2xl:w-40"></div>
+              <div class="bg-customBrown h-px w-97"></div>
             </div>
           </div>
           <div class="md:flex md:flex-row desktop:order-last">
@@ -535,22 +533,22 @@
               class="flex flex-col items-center bg-customSand py-49 md:w-339 md:pt-71 desktop:w-285 desktop:h-300 desktop:pt-70"
             >
               <p
-                class="text-customGray text-center text-sm font-poppins text-medium not-italic pb-15 leading-[0.9] pl-[3px] pb-[14px] md:pb-15 md:pl-px 2xl:text-20"
+                class="text-customGray text-center text-sm font-poppins text-medium not-italic pb-15 leading-[0.9] pl-[3px] pb-[14px] md:pb-15 md:pl-px"
               >
                 September 23, 2019
               </p>
               <h3
-                class="font-cormonant text-black text-center text-26 font-cormorant-garamond font-semibold not-italic leading-[1.3] pb-42 pl-63 pr-16 md:pr-[113px] md:pl-28 md:pb-41 desktop:pr-[97px] desktop:pl-24 2xl:text-2xl"
+                class="font-cormonant text-black text-center text-26 font-cormorant-garamond font-semibold not-italic leading-[1.3] pb-42 pl-63 pr-16 md:pr-[113px] md:pl-28 md:pb-41 desktop:pr-[97px] desktop:pl-24"
               >
                 Power of crystals
               </h3>
               <a
                 href="#"
-                class="text-customBlack text-center font-poppins text-base font-medium not-italic pb-[7.7px] pl-0.5 leading-[0.8] md:px-px md:pb-[8.7px] 2xl:text-2xl"
+                class="text-customBlack text-center font-poppins text-base font-medium not-italic pb-[7.7px] pl-0.5 leading-[0.8] md:px-px md:pb-[8.7px]"
               >
                 Read Article
               </a>
-              <div class="bg-customBrown h-px w-97 2xl:w-40"></div>
+              <div class="bg-customBrown h-px w-97"></div>
             </div>
           </div>
           <div class="md:flex md:flex-row desktop:row-span-2 desktop:relative">
@@ -573,46 +571,44 @@
               class="flex flex-col items-center bg-customSand py-66 md:w-339 md:pt-[87px] desktop:absolute desktop:right-0 desktop:bottom-0 desktop:w-285 desktop:h-300 desktop:pt-[69px]"
             >
               <p
-                class="text-customGray text-center text-sm font-poppins text-medium not-italic pb-[15.2px] leading-[0.9] pl-1 pr-0.5 md:pr-[3px] desktop:pl-[7px] desktop:pb-[16.2px] 2xl:text-20"
+                class="text-customGray text-center text-sm font-poppins text-medium not-italic pb-[15.2px] leading-[0.9] pl-1 pr-0.5 md:pr-[3px] desktop:pl-[7px] desktop:pb-[16.2px]"
               >
                 September 16, 2019
               </p>
               <h3
-                class="font-cormonant text-black text-center text-26 font-cormorant-garamond font-semibold not-italic leading-[1.3] pb-[41.5px] pl-63 pr-16 m-0 pt-0 desktop:pl-16 desktop:pb-[40.5px] 2xl:text-2xl"
+                class="font-cormonant text-black text-center text-26 font-cormorant-garamond font-semibold not-italic leading-[1.3] pb-[41.5px] pl-63 pr-16 m-0 pt-0 desktop:pl-16 desktop:pb-[40.5px]"
               >
                 AW 19 trends
               </h3>
               <a
                 href="#"
-                class="text-customBlack text-center font-poppins text-base font-medium not-italic pb-2 leading-[0.8] pl-px md:pl-0 2xl:text-2xl"
+                class="text-customBlack text-center font-poppins text-base font-medium not-italic pb-2 leading-[0.8] pl-px md:pl-0"
               >
                 Read Article
               </a>
-              <div class="bg-customBrown h-px w-97 2xl:w-40"></div>
+              <div class="bg-customBrown h-px w-97"></div>
             </div>
           </div>
         </div>
       </section>
       <section class="pt-59 md:pt-70 desktop:pt-[119px]">
         <h2
-          class="text-center font-cormorant-garamond text-customBlack text-34 font-bold tracking-1.02 pb-[29px] leading-[1.3] md:pb-12 2xl:text-[50px]"
+          class="text-center font-cormorant-garamond text-customBlack text-34 font-bold tracking-1.02 pb-[29px] leading-[1.3] md:pb-12"
         >
           Frequently asked questions
         </h2>
-        <div
-          class="flex flex-col px-15 md:px-45 desktop:px-[198px] 2xl:px-[800px]"
-        >
-          <div class="flex flex-row border border-solid border-customBrown">
-            <div
-              class="flex flex-col justify-center pl-6 md:pl-49 desktop:pl-43"
-            >
+        <div class="flex flex-col px-15 md:px-45 desktop:px-[198px]">
+          <div
+            class="flex flex-row border border-solid relative border-customBrown"
+          >
+            <div class="pl-6 md:pl-49 desktop:pl-43">
               <h3
-                class="text-16 font-poppins font-medium text-customBlack not-italic pt-[14px] leading-[1.4] pr-[34px] md:text-18 md:pt-43 2xl:pl-1.5 2xl:text-3xl"
+                class="text-16 font-poppins font-medium text-customBlack text-balance not-italic pt-[14px] leading-[1.4] md:text-18 md:pt-43"
               >
-                What materials are the jewellery made of
+                What materials are the jewellery made of?
               </h3>
               <p
-                class="text-14 font-poppins font-normal text-customBlack not-italic pt-4 pb-5 pr-3 leading-[1.4] md:text-16 md:pt-6 md:pr-26 md:leading-[1.3] md:pb-11 desktop:pr-[327px] desktop:pb-42 desktop:pl-1.5 desktop:pt-1.5 2xl:text-2xl"
+                class="text-14 font-poppins font-normal text-customBlack text-balance not-italic pt-4 pb-5 pr-[28px] leading-[1.4] md:text-16 md:pt-6 md:pr-26 md:leading-[1.3] md:pb-11 desktop:pb-42 desktop:pl-1.5 desktop:pt-1.5 desktop:pr-[392px] desktop:text-wrap"
               >
                 Our jewellerry is made of solid gold, silver or leather. Also,
                 some jewellery contains precious and semiprecious stones and
@@ -620,7 +616,7 @@
               </p>
             </div>
             <svg
-              class="mr-23 mt-23 flex-shrink-0 md:hidden desktop:hidden"
+              class="absolute top-[23px] right-[23px] flex-shrink-0 md:hidden desktop:hidden"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="12"
@@ -630,7 +626,7 @@
               <path d="M21 11L11 1L0.999999 11" stroke="#A87B62" />
             </svg>
             <svg
-              class="hidden desktop:hidden mr-12 mt-12 md:flex md:flex-shrink-0"
+              class="hidden desktop:hidden md:flex md:flex absolute top-12 right-12 shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="14"
@@ -640,7 +636,7 @@
               <path d="M24 13L12.5 1L1 13" stroke="#A87B62" />
             </svg>
             <svg
-              class="hidden md:hidden desktop:flex mr-12 mt-50 flex-shrink-0"
+              class="hidden md:hidden desktop:flex absolute top-[50px] right-12 flex-shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="17"
               height="10"
@@ -651,15 +647,15 @@
             </svg>
           </div>
           <div
-            class="flex flex-row border border-solid border-customBrown gap-[22px] 2xl:gap-[279px]"
+            class="flex flex-row border border-solid border-customBrown relative gap-0"
           >
             <h3
-              class="text-16 font-poppins font-medium text-customBlack not-italic pt-17 pb-18 pl-6 pr-43 leading-[1.4] md:text-18 md:py-42 md:pl-49 md:pr-[220px] desktop:pr-[527px] desktop:pl-43 2xl:text-3xl"
+              class="text-16 font-poppins text-balance font-medium text-customBlack not-italic pt-17 pb-18 pl-6 leading-[1.4] md:text-18 md:py-42 md:pl-49 desktop:pl-43"
             >
               Which countries do you deliver to?
             </h3>
             <svg
-              class="mr-23 mt-23 flex-shrink-0 md:hidden desktop:hidden"
+              class="absolute top-[23px] right-[23px] flex-shrink-0 md:hidden desktop:hidden"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="12"
@@ -669,7 +665,7 @@
               <path d="M1 1L11 11L21 1" stroke="#A87B62" />
             </svg>
             <svg
-              class="hidden desktop:hidden mr-12 mt-12 md:flex"
+              class="hidden desktop:hidden md:flex absolute top-12 right-12"
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="14"
@@ -679,7 +675,7 @@
               <path d="M1 1L12.5 13L24 1" stroke="#A87B62" />
             </svg>
             <svg
-              class="hidden md:hidden desktop:flex mr-12 mt-50 flex-shrink-0"
+              class="hidden md:hidden desktop:flex absolute top-[50px] right-12 flex-shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="17"
               height="10"
@@ -690,15 +686,15 @@
             </svg>
           </div>
           <div
-            class="flex flex-row border border-solid border-customBrown gap-[26px] 2xl:gap-[290px]"
+            class="flex flex-row border border-solid border-customBrown gap-0 relative"
           >
             <h3
-              class="text-16 font-poppins font-medium text-customBlack not-italic py-18 pl-[25px] pr-[10px] leading-[1.4] md:text-18 md:py-42 md:pl-49 md:pr-[227px] desktop:pr-[533px] desktop:pl-43 2xl:text-3xl"
+              class="text-16 font-poppins font-medium text-customBlack text-balance not-italic py-18 pl-[25px] leading-[1.4] md:text-18 md:py-42 md:pl-49 desktop:pl-43"
             >
               What are the payment methods?
             </h3>
             <svg
-              class="mr-23 mt-23 flex-shrink-0 md:hidden desktop:hidden"
+              class="absolute top-[23px] right-[23px] flex-shrink-0 md:hidden desktop:hidden"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="12"
@@ -708,7 +704,7 @@
               <path d="M1 1L11 11L21 1" stroke="#A87B62" />
             </svg>
             <svg
-              class="hidden desktop:hidden mr-12 mt-12 md:flex"
+              class="hidden desktop:hidden md:flex absolute top-12 right-12"
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="14"
@@ -718,7 +714,7 @@
               <path d="M1 1L12.5 13L24 1" stroke="#A87B62" />
             </svg>
             <svg
-              class="hidden md:hidden desktop:flex mr-12 mt-50 flex-shrink-0"
+              class="hidden md:hidden desktop:flex absolute top-[50px] right-12 flex-shrink-0"
               xmlns="http://www.w3.org/2000/svg"
               width="17"
               height="10"
@@ -729,7 +725,7 @@
             </svg>
           </div>
           <div
-            class="flex flex-row border border-solid border-customBrown gap-13 2xl:gap-[230px]"
+            class="flex flex-row border border-solid border-customBrown gap-0 relative"
           >
             <div>
               <h3
@@ -739,13 +735,13 @@
                 <p>jewellery if it didn't fit me?</p>
               </h3>
               <h3
-                class="hidden md:flex font-poppins font-medium text-customBlack not-italic leading-[1.4] text-18 md:pt-42 md:pb-43 md:pl-49 md:pr-[162px] desktop:pr-[467px] desktop:pl-45 2xl:text-3xl"
+                class="hidden md:flex font-poppins font-medium text-customBlack not-italic leading-[1.4] text-18 md:pt-42 md:pb-43 md:pl-49 desktop:pl-45"
               >
                 Can I return the jewellery if it didn't fit me?
               </h3>
             </div>
             <svg
-              class="mr-23 mt-23 flex-shrink-0 md:hidden desktop:hidden"
+              class="absolute top-[23px] right-[23px] flex-shrink-0 md:hidden desktop:hidden"
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="12"
@@ -755,7 +751,7 @@
               <path d="M1 1L11 11L21 1" stroke="#A87B62" />
             </svg>
             <svg
-              class="hidden desktop:hidden mr-12 mt-12 md:flex"
+              class="hidden desktop:hidden md:flex absolute top-12 right-12"
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="14"
@@ -765,7 +761,7 @@
               <path d="M1 1L12.5 13L24 1" stroke="#A87B62" />
             </svg>
             <svg
-              class="hidden md:hidden desktop:flex mr-12 mt-50 flex-shrink-0 2xl:mr-50"
+              class="hidden md:hidden desktop:flex flex-shrink-0 absolute top-[50px] right-12"
               xmlns="http://www.w3.org/2000/svg"
               width="17"
               height="10"
@@ -781,26 +777,26 @@
         <div class="flex flex-col items-center pb-46 md:pb-[60px]">
           <div class="flex items-center justify-items-center">
             <p
-              class="text-black font-cormorant-garamond text-[42px] font-bold not-italic tracking-[1.26px] md:pt-[0px] desktop:pt-[10px] desktop:pb-6 2xl:text-7xl"
+              class="text-black font-cormorant-garamond text-[42px] font-bold not-italic tracking-[1.26px] md:pt-[0px] desktop:pt-[10px] desktop:pb-6"
             >
               @
             </p>
             <p
-              class="text-customBlack text-center font-cormorant-garamond text-34 font-bold not-italic tracking-1.02 leading-[1.2] desktop:pb-[7px] 2xl:text-6xl"
+              class="text-customBlack text-center font-cormorant-garamond text-34 font-bold not-italic tracking-1.02 leading-[1.2] desktop:pb-[7px]"
             >
               Chjewellery
             </p>
           </div>
           <a
             href="#"
-            class="text-customBlack text-center font-poppins text-16 font-medium not-italic pb-[5px] pt-3 leading-[1.2] desktop:pt-0.5 2xl:text-2xl"
+            class="text-customBlack text-center font-poppins text-16 font-medium not-italic pb-[5px] pt-3 leading-[1.2] desktop:pt-0.5"
           >
             Follow Us
           </a>
-          <div class="bg-customBrown h-px w-[74px] 2xl:w-[110px]"></div>
+          <div class="bg-customBrown h-px w-[74px]"></div>
         </div>
         <div
-          class="grid grid-cols-2 grid-rows-[auto auto auto] px-15 gap-0 gap-y-27 gap-x-6 pb-71 md:grid-cols-[auto_auto_auto_auto] md:grid-rows-[auto_auto] md:gap-x-4 md:gap-y-21 md:px-45 md:pb-[78px] desktop:gap-x-27 desktop:gap-y-[34px] desktop:px-98 desktop:pb-[130px] 2xl:gap-x-[10px]"
+          class="grid grid-cols-2 grid-rows-[auto auto auto] px-15 gap-0 gap-y-27 gap-x-6 pb-71 md:grid-cols-[auto_auto_auto_auto] md:grid-rows-[auto_auto] md:gap-x-4 md:gap-y-21 md:px-45 md:pb-[78px] desktop:gap-x-27 desktop:gap-y-[34px] desktop:px-98 desktop:pb-[130px]"
         >
           <img
             class="w-full md:hidden desktop:hidden"
@@ -901,16 +897,16 @@
       </section>
     </main>
     <footer
-      class="bg-black pb-[60px] pt-49 md:pt-50 desktop:pt-[86px] desktop:flex desktop:flex-row desktop:gap-[67px] 2xl:justify-center"
+      class="bg-black pb-[60px] pt-49 md:pt-50 desktop:pt-[86px] desktop:flex desktop:flex-row desktop:gap-[67px]"
     >
       <div class="desktop:pl-42">
         <h2
-          class="text-white font-cormorant-garamond text-34 font-bold not-italic tracking-1.02 leading-[1.3] pl-13 pr-[60px] pb-[14px] md:pr-[316px] md:pb-[10px] md:pl-45 md:tracking-[0.84px] desktop:pr-[118px] desktop:pl-14 desktop:pb-[10px] desktop:pt-0.5 2xl:text-5xl"
+          class="text-white font-cormorant-garamond text-34 font-bold not-italic tracking-1.02 leading-[1.3] pl-13 pr-[60px] pb-[14px] md:pr-[316px] md:pb-[10px] md:pl-45 md:tracking-[0.84px] desktop:pr-[118px] desktop:pl-14 desktop:pb-[10px] desktop:pt-0.5"
         >
           The good stuff in your inbox
         </h2>
         <p
-          class="text-customGray text-16 font-poppins font-normal not-italic leading-[1.3] pr-57 pl-15 pb-42 md:pl-46 desktop:pr-13 desktop:pl-57 2xl:text-3xl"
+          class="text-customGray text-16 font-poppins font-normal not-italic leading-[1.3] pr-57 pl-15 pb-42 md:pl-46 desktop:pr-13 desktop:pl-57"
         >
           News and updates from CH. No spam, we promise.
         </p>
@@ -918,13 +914,13 @@
           class="flex gap-[91px] pb-[9px] pl-4 pr-13 md:pl-45 md:pb-[10px] md:gap-[377px] desktop:pl-14 desktop:pb-[10px] desktop:gap-[317px]"
         >
           <p
-            class="text-customGray text-left text-14 font-poppins font-normal not-italic leading-[1.3] pt-0.5 desktop:pt-[3px] 2xl:text-2xl"
+            class="text-customGray text-left text-14 font-poppins font-normal not-italic leading-[1.3] pt-0.5 desktop:pt-[3px]"
           >
             Your E-mail
           </p>
           <div class="flex gap-3 pl-15 items-center md:pl-0 desktop:pt-px">
             <p
-              class="text-white text-right text-16 font-poppins font-medium not-italic leading-[1.3] 2xl:text-2xl"
+              class="text-white text-right text-16 font-poppins font-medium not-italic leading-[1.3]"
             >
               Sign Up
             </p>
@@ -943,14 +939,14 @@
           </div>
         </div>
         <div
-          class="bg-white h-px w-[290px] ml-[15px] mb-11 md:w-[560px] md:ml-[45px] desktop:w-[500px] desktop:ml-[56px] 2xl:w-[600px]"
+          class="bg-white h-px w-[290px] ml-[15px] mb-11 md:w-[560px] md:ml-[45px] desktop:w-[500px] desktop:ml-[56px]"
         ></div>
       </div>
       <div
         class="flex flex-col gap-[39px] pl-15 md:flex-row md:pl-45 md:gap-[87px] desktop:flex-row desktop:pl-0 desktop:gap-[72px]"
       >
         <ul
-          class="flex flex-col gap-18 text-white text-16 font-poppins font-medium not-italic leading-1.3 desktop:pt-2 2xl:text-2xl"
+          class="flex flex-col gap-18 text-white text-16 font-poppins font-medium not-italic leading-1.3 desktop:pt-2"
         >
           <li>Ordering & Payment</li>
           <li>Terms & Conditions</li>
@@ -958,7 +954,7 @@
           <li>Delivery</li>
         </ul>
         <ul
-          class="flex flex-col gap-18 text-white text-16 font-poppins font-medium not-italic leading-1.3 desktop:pt-2 2xl:text-2xl"
+          class="flex flex-col gap-18 text-white text-16 font-poppins font-medium not-italic leading-1.3 desktop:pt-2"
         >
           <li>About CH</li>
           <li>Stores & Hours</li>
@@ -995,7 +991,7 @@
               />
             </svg>
             <p
-              class="text-white text-16 font-poppins font-medium not-italic leading-1.3 2xl:text-2xl"
+              class="text-white text-16 font-poppins font-medium not-italic leading-1.3"
             >
               Facebook
             </p>
@@ -1027,7 +1023,7 @@
               />
             </svg>
             <p
-              class="text-white text-16 font-poppins font-medium not-italic leading-1.3 2xl:text-2xl"
+              class="text-white text-16 font-poppins font-medium not-italic leading-1.3"
             >
               Instagram
             </p>
@@ -1059,7 +1055,7 @@
               />
             </svg>
             <p
-              class="text-white text-16 font-poppins font-medium not-italic leading-1.3 2xl:text-2xl"
+              class="text-white text-16 font-poppins font-medium not-italic leading-1.3"
             >
               Pinterest
             </p>
@@ -1091,7 +1087,7 @@
               />
             </svg>
             <p
-              class="text-white text-16 font-poppins font-medium not-italic leading-1.3 2xl:text-2xl"
+              class="text-white text-16 font-poppins font-medium not-italic leading-1.3"
             >
               Twitter
             </p>
